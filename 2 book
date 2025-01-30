@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.site-title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    color: #ff90bc;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(255, 20, 147, 0.8);
+}
+<div class="book-section">
+    <img src="your-book-cover.jpg" class="book-cover" alt="Обкладинка книги">
+    <p>Книга "Між двома світами" - твоя чарівна історія про пошук себе!</p>
+</div>
+
+<div class="author-section">
+    <img src="IMG_5977 (1)" class="IMG_1046" alt="Юлія, автор книги">
+    <p>Я вклала в цю книгу всю любов та душу. Дякую, що читаєш її! 💖</p>
+</div>
+.book-cover {
+    display: block;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    border: 5px solid #ffb6c1;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-cover:hover {
+    transform: rotate(-2deg) scale(1.05);
+}
+h1, h2 {
+    font-family: "Cherry Bomb One", cursive;
+    color: #ff69b4;
+    text-shadow: 2px 2px 8px rgba(255, 105, 180, 0.6);
+}
+.magic-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(45deg, #ff90bc, #ffacd4);
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.magic-button:hover {
+    transform: scale(1.1);
+}
+
+.magic-button::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 10%, transparent 60%);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.magic-button:hover::after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+}
+body {
+    background: url('sakura-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+<a href="https://t.me/julishkk_s" class="magic-button">Забронювати книгу</a>
+.magic-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.magic-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-30deg);
+    transition: left 0.5s ease-in-out;
+}
+
+.magic-button:hover::before {
+    left: 100%;
+}
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 182, 193, 0.8); }
+    50% { box-shadow: 0 0 20px rgba(255, 182, 193, 1); }
+    100% { box-shadow: 0 0 5px rgba(255, 182, 193, 0.8); }
+}
+
+.magic-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    animation: glow 1.5s infinite alternate;
+    transition: transform 0.2s ease-in-out;
+}
+
+.magic-button:hover {
+    transform: scale(1.1);
+}
+<div class="author-section">
+    <img src="IMG_3723" alt="Фото автора" class="author-photo">
+    <div class="author-text">
+        <h2>Про автора</h2>
+        <p>Я Юлія, авторка книги "Між двома світами". Вклала в цю історію багато любові та сил і дуже вдячна кожному, хто занурився в неї та відчув через себе.</p>
+    </div>
+</div>
+  <img src="images/cover.jpg" alt="Обкладинка книги">
+  <img src="images/author.jpg" alt="Фото автора">
+   .author-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* Ніжний рожевий фон */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.author-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Робить фото круглим */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.author-photo:hover {
+    transform: scale(1.1); /* Легке збільшення при наведенні */
+}
+
+.author-text {
+    max-width: 500px;
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+<div class="book-cover">
+    <img src="cover.jpg" alt="Обкладинка книги 'Між двома світами'">
+</div>
+.book-cover {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-cover img {
+    width: 300px; /* Розмір обкладинки, можна змінити */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Тінь для об’ємного ефекту */
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-cover img:hover {
+    transform: scale(1.05); /* Збільшення при наведенні */
+}
+<div class="sailor-moon-container">
+    <h1 class="sailor-title">月に代わって、おしおきよ！</h1>
+</div>
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sailor-moon-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sailor-title {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 10px #ffccff, 0 0 20px #ff99ff, 0 0 40px #ff66ff;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ffccff, 0 0 20px #ff99ff; }
+    100% { text-shadow: 0 0 15px #ff66ff, 0 0 30px #ff33ff; }
+}
+<h2 class="sailor-typing"></h2>
+<h2 class="kawaii-typing"></h2>
+<button class="kawaii-btn">クリックしてね (Click me)</button>
+.kawaii-btn {
+    background: linear-gradient(to right, #ffdde1, #f8c3c9);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+    transition: all 0.3s ease-in-out;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.kawaii-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.6);
+}
